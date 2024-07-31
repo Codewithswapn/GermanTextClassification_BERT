@@ -36,7 +36,7 @@ pip install torch transformers datasets evaluate nltk matplotlib pandas wordclou
   - The dataset is loaded using the Huggingface Datasets library.
   - Preprocessing includes lowercasing, removing punctuation, tokenization, and stopwords removal using NLTK.
 
--**Visualization**:
+- **Visualization**:
   - Word clouds are generated for each class to visualize the most common words in the dataset.
   - Also Visualize the training and test dataset with Class Distribution.
 
