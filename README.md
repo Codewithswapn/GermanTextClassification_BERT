@@ -35,17 +35,23 @@ pip install torch transformers datasets evaluate nltk matplotlib pandas wordclou
 - **Data Loading and Preprocessing**:
   - The dataset is loaded using the Huggingface Datasets library.
   - Preprocessing includes lowercasing, removing punctuation, tokenization, and stopwords removal using NLTK.
-  
+
+  - **Visualization**:
+  - Word clouds are generated for each class to visualize the most common words in the dataset.
+  - Also Visualize the training and test dataset with Class Distribution.
+
 - **Model Training**:
   - A BERT-based model (`bert-base-german-cased`) is fine-tuned on the dataset.
   - The training loop includes tracking the loss, accuracy, and F1 score.
+  - After the fine tunning pushed the model on Hugging Face Hub.
+  - CodeWithSwap01/finetuned-bert-base-german-cased this one is fine-tuned in this notebook.[https://huggingface.co/CodeWithSwap01/finetuned-bert-base-german-cased]
+  - This one is fined tuned in another notebook-CodeWithSwap01/distilbert-base-german-cased [https://huggingface.co/CodeWithSwap01/distilbert-base-german-cased]
+  - This one and above one fine-tuned in same notebook -CodeWithSwap01/bert-base-german-cased[https://huggingface.co/CodeWithSwap01/bert-base-german-cased]
+  - Below two models are trained on same hyperparameters and first one is with different one.
 
 - **Evaluation**:
   - The model's performance is evaluated using overall accuracy and F1 score.
   - Additionally, per-class accuracy and F1 score are analyzed to identify class-specific performance.
-
-- **Visualization**:
-  - Word clouds are generated for each class to visualize the most common words in the dataset.
 
 - **Future Work**:
   - Exploring long-range BERT models like Longformer and other one which can be work with German Language to handle texts longer than 512 tokens.
