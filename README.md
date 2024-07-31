@@ -1,4 +1,4 @@
-# GermanTextClassification_UsingBERT
+# German Text Classification Using BERT
 
 This project implements a text classification model to classify German news articles into 9 different categories using the GNAD10 dataset. The model is based on the BERT architecture and it's a pretrain model from Hugging Face Hub.
 
