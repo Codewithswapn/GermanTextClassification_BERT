@@ -1,6 +1,6 @@
 # GermanTextClassification_UsingBERT
 
-This project implements a text classification model to classify German news articles into 9 different categories using the GNAD10 dataset. The model is based on the BERT architecture and was developed using Huggingface's Transformers library and PyTorch.
+This project implements a text classification model to classify German news articles into 9 different categories using the GNAD10 dataset. The model is based on the BERT architecture and it's a pretrain model from Hugging Face Hub.
 
 ## Project Overview
 
@@ -48,7 +48,7 @@ pip install torch transformers datasets evaluate nltk matplotlib pandas wordclou
   - Word clouds are generated for each class to visualize the most common words in the dataset.
 
 - **Future Work**:
-  - Exploring long-range BERT models like Longformer to handle texts longer than 512 tokens.
+  - Exploring long-range BERT models like Longformer and other one which can be work with German Language to handle texts longer than 512 tokens.
   - Hyperparameter tuning using tools like Optuna or Raytune to optimize model performance.
 
 ## Results
